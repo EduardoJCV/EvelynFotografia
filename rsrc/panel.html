@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelyn Villalba Admin</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+</head>
+<style>
+    html>body{
+        height: 100vh;
+        background:rgba(0,0,0,0.87);
+        color: #fff;
+    }
+    .input{
+        width: 100%;
+        cursor: pointer;
+    }
+    .image-upload > input{
+        display: none;
+    }
+
+    .image-upload img{
+        width: 100%;
+        cursor: pointer;
+    }
+    .select-pack{
+        width: 100% !important;
+        display: inline-block;
+    }
+    .input-select{
+        width: auto !important;
+        display: inline-block;
+    }
+    .btn-eliminar{
+        cursor: pointer;
+        position: absolute;
+        color: red;
+        padding: 10px;
+        float: right;
+        right: 20px;
+    }
+    .carga-bg{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99999;
+        background: rgba(0,0,0,0.87);
+    }
+    .carga{
+        width: 500px;
+        height: 200px;
+        background: white;
+        margin: auto;
+        margin-top: 20vh;
+        color: black;
+        text-align: center;
+    }
+    .hide {
+        display: none;
+    }
+    section,h1 {
+        padding: 0 1em;
+    }
+    .grid
+    {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap:50px 30px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+    }
+    .grid-item{
+    border:thin gray solid;
+    padding:10px;
+    }
+    img {
+    width: 100%;
+    }
+</style>
+<body>
+
+<div id="cargaContent" class="carga-bg hide">
+    <div class="carga">
+        <h2>Subiendo...</h2>
+        <p id="cargaValue">40.94943%</p>
+    </div>
+</div>
+
+<div id="app" class="contenedor">
+    <div class="contenedor">
+        <h2 class="titulo">Inicia Sesion</h2>
+        <div class="form">
+            <input id="inpt-log-usr" class="input"  type="text" placeholder="Usuario">
+            <input id="inpt-log-clv" class="input"  type="text" placeholder="Clave">
+            <br>
+            <button id="btn-log" class="input">Entrar</button>
+        </div>
+    </div>
+</div>
+<div class="contenedor">
+    <center>
+        <p>COPYRIGHT © 2020 Evelyn Villalba & Power by 2020 EduDevWeb</p>
+    </center>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>    
+<script src="../scripts/sv.js"></script>
+<script src="../scripts/svIndex.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
