@@ -3,6 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+#carrousel-work-1 {
+    background: transparent !important;
+    color: black !important;
+}
+#carrousel-work-2 {
+    background: transparent !important;
+    color: black !important;
+}
+#carrousel-work-3 {
+    background: transparent !important;
+    color: black !important;
+}
+#carrousel-work-4 {
+    background: transparent !important;
+    color: black !important;
+}
 
 html{
     scroll-behavior: smooth;
